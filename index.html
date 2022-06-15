@@ -11,7 +11,26 @@
   <!-- HEADER START -->
   <header class="header">
     <div class="container">
-      <h2 class="header__title">Hello user! This template is for used</h2>
+      <div class="header__container">
+        <a href="./index.html" class="header__logo-link">
+          <img src="./images/coffee-roasters-site-logo-header.svg" alt="Site logo" class="header__logo-img">
+        </a>
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link nav__link--active">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="./about.html" class="nav__link">About us</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="./subscribe.html" class="nav__link">Create your plan</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <!-- HEADER END -->
@@ -21,7 +40,80 @@
     <!-- hero-section start -->
     <section class="hero">
       <div class="container">
+        <picture>
+          <!-- Avif -->
+          <source
+            type="image/avif"
+            media="(max-width: 425px)"
+            srcset="
+              ./images/hero-img-327-1x.avif 1x,
+              ./images/hero-img-327-2x.avif 2x
+            "
+          />
 
+          <source
+            type="image/avif"
+            media="(max-width: 768px)"
+            srcset="
+              ./images/hero-img-689-1x.avif 1x,
+              ./images/hero-img-689-2x.avif 2x
+            "
+          />
+          <source
+            type="image/avif"
+            srcset="
+              ./images/hero-img-1280-1x.avif 1x,
+              ./images/hero-img-1280-2x.avif 2x
+            "
+          />
+
+
+          <!-- Webp -->
+          <source
+            type="image/webp"
+            media="(max-width: 425px)"
+            srcset="
+              ./images/hero-img-327-1x.webp 1x,
+              ./images/hero-img-327-2x.webp 2x
+            "
+          />
+
+          <source
+            type="image/webp"
+            media="(max-width: 768px)"
+            srcset="
+              ./images/hero-img-689-1x.webp 1x,
+              ./images/hero-img-689-2x.webp 2x
+            "
+          />
+          <source
+            type="image/webp"
+            srcset="
+              ./images/hero-img-1280-1x.webp 1x,
+              ./images/hero-img-1280-2x.webp 2x
+            "
+          />
+
+          <!-- Jpg default -->
+          <source
+            media="(max-width: 425px)"
+            srcset="
+              ./images/hero-img-327-1x.jpg 1x,
+              ./images/hero-img-327-2x.jpg 2x
+            "
+          />
+
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./images/hero-img-689-1x.jpg 1x,
+              ./images/hero-img-689-2x.jpg 2x
+            "
+          />
+
+          <img src="./images/hero-img-1280-1x.jpg" width="100%" alt="hero img" srcset="./images/hero-img-1280-1x.jpg 1x, ./images/hero-img-1280-2x.jpg 2x">
+
+        </picture>
       </div>
     </section>
     <!-- hero-section end -->
